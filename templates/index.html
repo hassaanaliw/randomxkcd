@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Random XKCD</title>
+    <meta name="description" content="Random XKCD comics"/>
+	<meta name="google-site-verification" content="7PScmfGPlPgWLmnaiciG6rul7hPVJO8e7_Awpn1vZZI" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+   
+  <body>
+	<!--Remember the data list we passed to this file. Now we read each key from it and display it here -->
+	  {% for i in data %} 
+	  <div align="center">
+	     <h2>{{i.alt}}</h3>
+	     <img src={{i.img}}>
+	  </div>
+	  {%endfor%}  	  	  	  	  
+	  
+  </body>
+</html>
